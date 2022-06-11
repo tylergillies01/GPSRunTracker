@@ -1,0 +1,10 @@
+// Day 1 Stopping Point --> have a button that will get the location and add it to a list, have a button that will take that list and calculation the distance between all of them
+        // Need to properly test, will walk around pressing the button and see if the distance is calculated
+        // NEXT: if the distance does work, will need to set a time interval to loop at after you press the button, then press other button to exit that time loop, then calculate
+        // FUTURE: want to add map that shows the points
+
+// Day 2 Stopping Point --> tested original design where you press the button each time - Works
+    // Changed it so program uses handler and runnable to continually update location on a time interval
+    // tested that way and got close numbers to prototype, was 39, now got 49 and 59
+    // NEXT: want to add the stopwatch feature to track time spent, then can work on reporting and recording the performance data
+    // FUTURE: Map will be a late addition if it even ends up getting added, need to register with google or something

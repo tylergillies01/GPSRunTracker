@@ -1,0 +1,40 @@
+// Day 1 Stopping Point --> have a button that will get the location and add it to a list, have a button that will take that list and calculation the distance between all of them
+        // Need to properly test, will walk around pressing the button and see if the distance is calculated
+        // NEXT: if the distance does work, will need to set a time interval to loop at after you press the button, then press other button to exit that time loop, then calculate
+        // FUTURE: want to add map that shows the points
+
+// Day 2 Stopping Point --> tested original design where you press the button each time - Works
+    // Changed it so program uses handler and runnable to continually update location on a time interval
+    // tested that way and got close numbers to prototype, was 39, now got 49 and 59
+    // NEXT: want to add the stopwatch feature to track time spent, then can work on reporting and recording the performance data
+    // FUTURE: Map will be a late addition if it even ends up getting added, need to register with google or something
+
+
+// Day 3 Stopping Point --> got it "working" where it is continuously getting the location
+    - got it to check the loco on a time interval
+    - have it displaying the estimated accuracy of the data points, usually about 15, even got up to 60
+    - NEXT: NEED TO ADD THE MAP AND START MAPPING THE MARKERS, THIS IS THE ONLY WAY FORWARD
+        - could add the stopwatch as a next stop but even then, adding the map is the only path forward
+        - need to add the map and map each location point so I can see where they are straying and causing the distance to be larger
+            - can then look into optimizing the way the distance is calculated
+
+
+// Day 4 --> took a decent break so just came to review the code and comment what I have so far
+    - moved some things around, ex took the locationcallback initialization and put it in updatelocation
+        I basically got rid of the function: startlocationupdates and combined it all into updateLocation()
+    - Next step is still the map
+    - Also forced orientation to be portrait, screen rotation was crashing app
+
+
+// March 4 2022 --> havent been keeeping up with the log but, MASSIVE DAY OF PROGRESS
+    - fully set up the map in a 2nd activity
+    - made the finish button bring you there and pass along the distance and the arraylist of markers using intents
+    - then in the map activity made a method to loop through the markers arraylist and plot them all on the map
+    - then added a textview on top of the map to display the distance
+        - had to wrap the entire map fragment in a constraint layout
+    - NEXT STEPS:
+        - will eventually need to add a stopwatch as well as storing the results to be able to be viewed later
+        - can try and connect the points with a line if I want, not a priority though
+        - Will need to try and come up with some kind of algorithm to smooth out or filter out the straying data points
+            - this is basically some kind of graph
+            - maybe ignore points that stray too far, or maybe try to keep them as straight as possible

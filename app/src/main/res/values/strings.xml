@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Run Tracker</string>
+    <string name="title">Welcome</string>
+
+
+    <string name="location">Location:</string>
+    <string name="distance">Distance Traveled:</string>
+
+
+    <string name="start">Start</string>
+    <string name="finish">Finish</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>
